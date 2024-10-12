@@ -20,7 +20,7 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
 
     printf("Por favor digite o nome da primeira Cidade: \n");
-    scanf("%s", &nome1);
+    fgets(nome1, 50, stdin);
     printf("Por favor digite o código da primeira Cidade: \n");
     scanf("%d", &codigoCidade1);
     printf("Por favor digite a população geral da primeira Cidade: \n");
@@ -32,8 +32,10 @@ int main() {
     printf("Por favor digite quantos pontos turísticos tem na primeira Cidade: \n");
     scanf("%u", &pontosTuristicos1);
 
+    while (getchar() != '\n');
+
     printf("Por favor digite o nome da segunda Cidade: \n");
-    scanf("%s", &nome2);
+    fgets(nome2, 50, stdin);
     printf("Por favor digite o código da segunda Cidade: \n");
     scanf("%d", &codigoCidade2);
     printf("Por favor digite a população geral da segunda Cidade: \n");
@@ -44,6 +46,7 @@ int main() {
     scanf("%lld", &pib2);
     printf("Por favor digite quantos pontos turísticos tem na segunda Cidade: \n");
     scanf("%u", &pontosTuristicos2);
+
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
